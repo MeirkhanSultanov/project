@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>characters</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="characters.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div id="bodymain">
+	<header class="container-fluid" id="header">
+		<div class="nav">
+			<label for="toggle">&#9776</label>
+		</div>
+		<input type="checkbox" name="" id="toggle">
+		<div  class="container-fluid" id="nav">
+			 <a href="index.html" id="alogo"><img src="https://www.guilded.gg/asset/GameIcons/GrandCross-lg.png" id="logo" alt="7ds"></a>
+			<ul class="menu">
+				<li >
+					<a class="about_game" href="aboutgame.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">About Game</a>
+				</li>
+				<li >
+					<a class="story" href="story.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Story</a>
+				</li>
+				<li >
+					<a class="characters" href="characters.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Characters</a>
+				</li>
+				<li >
+					<a class="teams" href="teams.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Teams</a>
+				</li>
+				<li >
+					<a class="community" href="community.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Community</a>
+				</li>
+				<li>
+					<a class="play" href="https://bstk.me/usCfCbCYU" target="_blank" onmouseover ="big(this)" onmouseout="small(this)" rel="noopener noreferrer">Play on PC</a>
+				</li>
+				<div class="pic">
+					<div class="user_profile">
+						<img id="profile_img" src="https://cdn131.picsart.com/315664615200211.png?type=webp&to=min&r=640" alt="">
+						<p id="user_name">Escanor</p>
+					</div>
+					<div class="bt">
+						<button onclick="popup()" id="btn_white" class="btn btn-outline-light btn-lg">JOIN</button>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</header> 
+
+		<div id="main">
+			<div id="main">
+				<div id="sect1">
+					<a href="#demo">
+						<img src="https://www.realmarketingclub.net/uploads/2/2/1/5/22155914/d.png" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="popup"> 
+			<div class="popup-content">
+				<img onclick="close_popup()" class="closed" width="7%" src="https://cdn.onlinewebfonts.com/svg/img_469207.png" alt="close">
+				<img width="40%" src="https://tiermaker.com/images/templates/2812261583409455.png" alt="SDS Icon">
+				<input id="username" type="text" name="username" placeholder="Username">
+				<input type="password" id="pass" name="pass" placeholder="Password">
+				<button onclick="login(username.value)" class="btn btn-outline-dark">Log In</button>
+			</div>
+		</div>
+
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				<div id="sds">
+					<h1>The Seven Deadly Sins</h1>
+					<h5>It were the strongest and cruelest order of Holy Knights in the kingdom, formed by Meliodas and six other brutal criminals from various races who were branded symbols of beasts to symbolize the sin that motivated their crimes. Each of the members of the group had the highest Holy Knight ranking, Diamond. They were branded as traitors to Britannia, having allegedly abetted the assassination of the Great Holy Knight Zaratras. The Deadly Sins are eventually absolved of their crimes after liberating Liones from rule of the Holy Knights.</h5>
+				</div>
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+					<li data-target="#demo" data-slide-to="3"></li>
+					<li data-target="#demo" data-slide-to="4"></li>
+					<li data-target="#demo" data-slide-to="5"></li>
+					<li data-target="#demo" data-slide-to="6"></li>
+			  	</ul>
+			  
+				<div class="carousel-inner" id="carousmain">
+					<div class="carousel-item active">
+						<h3>Meliodas</h3>
+				  		<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20191204/ubll1575439350311.jpg" alt="Meliodas"  >
+						<h4>Dragon's Sin - Wrath</h4>
+					</div>
+					<div class="carousel-item">
+						<h3>Diane</h3>
+				 		<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20191204/ujhj1575439887336.jpg" alt="Diane"  >
+						<h4>Snake's Sin - Envy</h4>
+					</div>
+					<div class="carousel-item">
+						<h3>Ban</h3>
+				  		<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20191204/rosp1575439912532.jpg" alt="Ban"  >
+						<h4>Fox's Sin - Greed</h4>
+					</div>
+					<div class="carousel-item">
+						<h3>King</h3>
+						<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20191204/dxob1575439932654.jpg" alt="King"  >
+						<h4>Grizzly's Sin - Sloth</h4>
+					</div>
+				  	<div class="carousel-item">
+						<h3>Gowther</h3>
+						<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20191204/bgrv1575439949760.jpg" alt="Gowther"  >
+						<h4>Goat's Sin - Lust</h4>
+					</div>
+				  	<div class="carousel-item">
+						<h3>Merlin</h3>
+						<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20191204/hauu1575439967596.jpg" alt="Merlin"  >
+						<h4>Boar's Sin - Gluttony</h4>
+					</div> 
+				  	<div class="carousel-item">
+						<h3>Escanor</h3>
+						<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20200804/jbwy1596518069039.jpg" alt="Escanor"  >
+						<h4>Lion's Sin - Pride</h4>
+					</div>
+				</div>
+				<div>
+					<a class="carousel-control-prev"  href="#demo" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+
+
+			<div id="demo1" class="carousel slide" data-ride="carousel">
+				<div id="sds">
+					<h1>The Ten Commandments</h1>
+					<h5>Ten elite demons selected personally by the Demon King, before they were sealed by the end the Holy War. Each of the Ten Commandments can make use of a curse which plays on the virtue that they represent. The Commandments are named after virtues they are branded with, later revealed to be fragments of the Demon King's soul, which play on the nature of their curses</h5>
+				</div>
+				<ul class="carousel-indicators">
+					<li data-target="#demo1" data-slide-to="0" class="active"></li>
+					<li data-target="#demo1" data-slide-to="1"></li>
+					<li data-target="#demo1" data-slide-to="2"></li>
+					<li data-target="#demo1" data-slide-to="3"></li>
+					<li data-target="#demo1" data-slide-to="4"></li>
+					<li data-target="#demo1" data-slide-to="5"></li>
+					<li data-target="#demo1" data-slide-to="6"></li>
+			  	</ul>
+			  
+				<div class="carousel-inner" id="carousmain">
+					<div class="carousel-item active">
+						<h3>Zeldris</h3>
+				  		<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20201005/yu8r1601878904575.jpg" alt="Zeldris"  >
+						<h4>Commandment of Piety</h4>
+					</div>
+					<div class="carousel-item">
+						<h3>Fraudrin</h3>
+				 		<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20201005/avar1601875169728.jpg" alt="Fraudrin"  >
+						<h4>Commandment of Selflessness</h4>
+					</div>
+					<div class="carousel-item">
+						<h3>Derieri</h3>
+				  		<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20200818/ysdi1597729656695.jpg" alt="Derieri"  >
+						<h4>Commandment of Purity</h4>
+					</div>
+					<div class="carousel-item">
+						<h3>Monspeet</h3>
+						<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20200811/7uod1597109462376.jpg" alt="King"  >
+						<h4>Commandment of Reticence</h4>
+					</div>
+				  	<div class="carousel-item">
+						<h3>Estarossa</h3>
+						<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20200731/qqaf1596173283165.jpg" alt="Estarossa"  >
+						<h4>Commandment of Love</h4>
+					</div>
+				  	<div class="carousel-item">
+						<h3>Melascula</h3>
+						<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20200721/rckm1595329052324.jpg" alt="Melascula"  >
+						<h4>Commandment of Faith</h4>
+					</div> 
+				  	<div class="carousel-item">
+						<h3>Galland</h3>
+						<img src="https://sgimage.netmarble.com/images/netmarble/nanagb/20200401/krsa1585735859837.jpg" alt="Galland"  >
+						<h4>Commandment of Truth</h4>
+					</div>
+				</div>
+				<div>
+					<a class="carousel-control-prev"  href="#demo1" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo1" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+
+			<div id="sevdis">
+				<h2>Greet The Seven Disasters, new original characters by developers of The Seven Deadly Sins: Grand Cross and Manga author Nakaba Suzuki!</h2>
+			</div>
+			<div id="demo2" class="carousel slide" data-ride="carousel">
+				<div id="sd">
+					<h1>The Seven Disasters</h1>
+					<h5>The Seven Catastrophes are a group formed by Lilia that aim for the destruction of the whole world.</h5>
+				</div>
+				<ul class="carousel-indicators">
+					<li data-target="#demo2" data-slide-to="0" class="active"></li>
+					<li data-target="#demo2" data-slide-to="1"></li>
+					<li data-target="#demo2" data-slide-to="2"></li>
+					<li data-target="#demo2" data-slide-to="3"></li>
+					<li data-target="#demo2" data-slide-to="4"></li>
+					<li data-target="#demo2" data-slide-to="5"></li>
+					<li data-target="#demo2" data-slide-to="6"></li>
+			  	</ul>
+			  
+				<div class="carousel-inner" id="carousmain">
+					<div class="carousel-item active">
+						<h3>Lilia</h3>
+				  		<img src="img/lilia.png" width="300px" alt="Zeldris"  >
+						<h4>Doombringer</h4>
+					</div>
+					<div class="carousel-item">
+						<h3>Valenty</h3>
+				 		<img src="img/valenty.png" alt="Valenty"  >
+						<h4>Earthshaker</h4>
+					</div>
+					<div class="carousel-item">
+						<h3>Eastin Amabyllis</h3>
+				  		<img src="https://static.wikia.nocookie.net/nanatsu-no-taizai/images/a/a1/Eastin.png/revision/latest/scale-to-width-down/340?cb=20200411075340" alt="Eastin"  >
+						<h4>Ruler of Seas</h4>
+					</div>
+					<div class="carousel-item">
+						<h3>Mono</h3>
+						<img src="https://hedwig-cf.netmarble.com/forum-common/nanagb/7ds_en/9c52ac33ba9c40a5b5d9f178760430e2_accountSet.png" alt="Mono"  >
+						<h4>Shepherd of Death</h4>
+					</div>
+				  	<div class="carousel-item">
+						<h3>Roxy</h3>
+						<img src="https://static.wikia.nocookie.net/nanatsu-no-taizai/images/7/7d/Roxy-icon.png/revision/latest/scale-to-width-down/340?cb=20200514181122" alt="Roxy"  >
+						<h4>Queen of Explosions</h4>
+					</div>
+				  	<div class="carousel-item">
+						<h3>Shin</h3>
+						<img src="https://static.wikia.nocookie.net/nanatsu-no-taizai/images/a/a1/Shin-icon.png/revision/latest/scale-to-width-down/340?cb=20200515192918" alt="Shin"  >
+						<h4>Dungeon Raider</h4>
+					</div> 
+				  	<div class="carousel-item">
+						<h3>Camila</h3>
+						<img src="https://static.wikia.nocookie.net/nanatsu-no-taizai/images/7/78/Camila_Icon.png/revision/latest/scale-to-width-down/340?cb=20200813103436" alt="Camila"  >
+						<h4>Executor of Darkness</h4>
+					</div>
+				</div>
+				<div>
+					<a class="carousel-control-prev"  href="#demo2" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a class="carousel-control-next" href="#demo2" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+			<div id="section2">
+				<a href="#header">
+					<img src="img/arrowup.png" alt="">
+				</a>
+			</div>
+		<script src="characters.js"></script>
+</div>
+</body>
+</html>

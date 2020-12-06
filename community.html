@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Community</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="community.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=initMap&libraries=&v=weekly"
+	  defer
+	  ></script>
+</head>
+<body onload="load()">
+	<header class="container-fluid" id="header">
+		<div class="nav">
+			<label for="toggle">&#9776</label>
+		</div>
+		<input type="checkbox" name="" id="toggle">
+		<div  class="container-fluid" id="nav">
+			 <a href="index.html" id="alogo"><img src="https://www.guilded.gg/asset/GameIcons/GrandCross-lg.png" id="logo" alt="7ds"></a>
+			<ul class="menu">
+				<li >
+					<a class="about_game" href="aboutgame.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">About Game</a>
+				</li>
+				<li >
+					<a class="story" href="story.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Story</a>
+				</li>
+				<li >
+					<a class="characters" href="characters.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Characters</a>
+				</li>
+				<li >
+					<a class="teams" href="teams.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Teams</a>
+				</li>
+				<li >
+					<a class="community" href="community.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Community</a>
+				</li>
+				<li>
+					<a class="play" href="https://bstk.me/usCfCbCYU" target="_blank" onmouseover ="big(this)" onmouseout="small(this)" rel="noopener noreferrer">Play on PC</a>
+				</li>
+				<div class="pic">
+					<div class="user_profile">
+						<img id="profile_img" src="https://cdn131.picsart.com/315664615200211.png?type=webp&to=min&r=640" alt="">
+						<p id="user_name">Escanor</p>
+					</div>
+					<div class="bt">
+						<button onclick="popup()" id="btn_white" class="btn btn-outline-light btn-lg">JOIN</button>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</header> 
+
+	<div class="container-fluid" id="general">
+		<div id="main">
+			<div id="sect1">
+				<a href="#socmedtext">
+					<img src="https://www.realmarketingclub.net/uploads/2/2/1/5/22155914/d.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="popup"> 
+			<div class="popup-content">
+				<img onclick="close_popup()" class="closed" width="7%" src="https://cdn.onlinewebfonts.com/svg/img_469207.png" alt="close">
+				<img width="40%" src="https://tiermaker.com/images/templates/2812261583409455.png" alt="SDS Icon">
+				<input id="username" type="text" name="username" placeholder="Username">
+				<input type="password" id="pass" name="pass" placeholder="Password">
+				<button onclick="login(username.value)" class="btn btn-outline-dark">Log In</button>
+			</div>
+		</div>
+		
+		<div id="maincom">
+			<div class="social_media" id="socialmedia">
+				<div class="community_text">
+					<h1 id="socmedtext">Do you want to be the first to know about updates and keep abreast of events?</h1>
+					<h2 id="socmedtext1">JOIN OUR SOCIAL MEDIA!</h2>
+				<div>
+				<div  id="socmed">
+					<a href="https://www.facebook.com/7ds.en/?hc_ref=ARQ9SX__LLvl2stOy3K6Yg3cFhqoTVVaUOA630AY0h8ak6TIAhasftGS9Ie4Vmkq2wE&fref=nf&__tn__=kC-R">
+						<img src="https://cdn.iconscout.com/icon/free/png-512/facebook-social-media-fb-logo-square-44659.png" height="175px" alt="facebook">
+					</a>
+					<a href="https://www.youtube.com/channel/UC_DhcobxUWJcD_LS33gzwwg">
+						<img src="https://www.pngkit.com/png/full/646-6466650_png-file-black-youtube-icon-png.png" height="150px" alt="youtube">
+					</a>
+					<a href="https://www.instagram.com/7ds.en/?hl=en">
+						<img src="https://image.flaticon.com/icons/png/512/87/87390.png" height="150px" alt="">
+					</a>
+					<a href="https://discord.gg/xKp8Vbr" >
+						<img src="https://cdn.iconscout.com/icon/free/png-256/discord-1-555369.png" height="220px" alt="">
+					</a>
+				</div>
+			</div>
+
+			<div class="forum">
+				<H1 style="	color: #DFDFDF; text-align: center;">Do you need help or want to share your experience? <br> Meet players around the world and join the order!</H1>
+				<h2 style="color:#ECA009; margin-top: 20px; text-align: center;"> JOIN OUR FORUM!</h2>
+				<a id="forum1" href="https://forum.netmarble.com/7ds_en">
+					<img src="https://www.freeiconspng.com/thumbs/forum-icon/forum-icon-20.png" height="200px" alt="">
+				</a>
+			</div>
+			
+			<h2 style="color:#ECA009; text-align: center;margin-top: 20px;">YOUTUBERS</h2>
+			<h3 style="color: #DFDFDF;text-align: center;margin-bottom: 20px;">Watch guides, heroes showcases, summons and a lot of fun content!</h3>
+
+			<div class="card-columns" id="youtubers" style="display: inline-block;">
+
+				<div class="card" style="width:400px">
+				   	<img class="card-img-top" src="https://yt3.ggpht.com/ytc/AAUvwniIG8aYpBSveCfgJ1dtPrtYLFSb2mDnvE-a1WN08w=s900-c-k-c0x00ffffff-no-rj" alt="Nagato" width="300px">
+				   	<div class="card-body">
+						<h4 class="card-title">Nagato Grand Cross</h4>
+						<p class="card-text">English speaking blogger.The most popular Youtuber. <br>>124k subscribers</p>
+						<a href="https://www.youtube.com/channel/UCEc-VrGj-VL7h-bdujKRPuQ" class="btn btn-primary">See Channel</a>
+				  	</div>
+				</div>
+
+				<div class="card" style="width:400px">
+					<img class="card-img-top" src="https://yt3.ggpht.com/ytc/AAUvwnhAyH8Gk0lp_b_sB-RyFuK-uiqj-g9--5MoqYXYQA=s900-c-k-c0x00ffffff-no-rj" alt="sekapoko" width="300px">
+					<div class="card-body">
+					  	<h4 class="card-title">SekaPoko</h4>
+					  	<p class="card-text">English speaking blogger.Insider, predicting dates of coming Heroes. <br>>56k subscribers</p>
+					  	<a href="https://www.youtube.com/user/sekapoko" class="btn btn-primary">See Channel</a>
+					</div>
+				</div>
+
+				<div class="card" style="width:400px">
+					<img class="card-img-top" src="https://static-cdn.jtvnw.net/jtv_user_pictures/e43565c5-5bf5-4ad3-a399-db2adce42f52-profile_image-300x300.png" alt="okami" width="300px">
+					<div class="card-body">
+					  	<h4 class="card-title">OkamiSlay</h4>
+					  	<p class="card-text">Russian speaking blogger. Free to play. Streams every day. <br>>3,8k subscribers</p>
+					  	<a href="https://www.youtube.com/channel/UCgeqkJaJlH_y2aqmQNVnAiQ" class="btn btn-primary">See Channel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="mapstxt">
+			<h1>MEETING MAP</h1>
+			<h2>If you live in cities,which marked on the map, come to our meetings to meet more like-minded people and share your own experience together!</h2>
+		</div>
+		<div class="maps">
+			<div id="map"></div>
+			<div class="map_info">
+				<div class="legend">
+					<div id="white">
+						<p style="margin-left: 20px; margin-top: 20px;">
+						<img src="https://wf.cdn.gmru.net/static/wf.mail.ru/img/main/content/meetingsmap/point.png" alt="once">
+						The meeting took place once</p>
+					</div>
+					<br>
+					<div id="red">
+						<p style="margin-left: 20px;">
+						<img src="https://wf.cdn.gmru.net/static/wf.mail.ru/img/main/content/meetingsmap/point_next.png" alt="">
+						Scheduled meeting</p>
+					</div>
+					<br>
+					<div id="orange">
+						<p style="margin-left: 20px;">
+						<img src="https://wf.cdn.gmru.net/static/wf.mail.ru/img/main/content/meetingsmap/point_several.png" alt="">
+						The meeting took place several times</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+		function initMap(){
+			var options = {
+			  center: {lat: 48.0196 ,lng: 66.9237},
+			  zoom: 4
+			}
+			var map = new google.maps.Map(document.getElementById("map"), options);
+		  
+			var white = {url: "https://wf.cdn.gmru.net/static/wf.mail.ru/img/main/content/meetingsmap/point.png" ,
+						scaledSize: new google.maps.Size(15 , 25),
+						origin: new google.maps.Point(0,0),
+						anchor: new google.maps.Point(0 , 0)
+			};
+			var orange = {url: "https://wf.cdn.gmru.net/static/wf.mail.ru/img/main/content/meetingsmap/point_several.png" ,
+					scaledSize: new google.maps.Size(15 , 25),
+					origin: new google.maps.Point(0,0),
+					anchor: new google.maps.Point(0 , 0)
+			};
+			var red = {url: "https://wf.cdn.gmru.net/static/wf.mail.ru/img/main/content/meetingsmap/point_next.png" ,
+					scaledSize: new google.maps.Size(15 , 25),
+					origin: new google.maps.Point(0,0),
+					anchor: new google.maps.Point(0 , 0)
+			};
+			var astana = new google.maps.Marker({
+				position: {lat: 51.08929881998236, lng: 71.40754912856536 },   
+				map: map ,
+				icon: orange
+			});
+			var almaty = new google.maps.Marker({
+    			position: {lat: 43.21856142646006, lng: 76.92795001442596},  
+    			map: map ,
+				icon: orange
+			});
+			var atyrau = new google.maps.Marker({
+ 				position: {lat: 47.10549701235164, lng: 51.89551659353477},  
+  				map: map ,
+				  icon: orange
+			});
+			var ekibastuz = new google.maps.Marker({
+ 				position: {lat: 51.7252, lng: 75.3151},  
+  				map: map ,
+  				icon: red
+			});
+			var pavlodar = new google.maps.Marker({
+ 				position: {lat: 52.2752, lng: 76.9884},  
+  				map: map ,
+				  icon: white
+			});
+			var shymkent = new google.maps.Marker({
+ 				position: {lat: 42.31480605184506, lng: 69.58842594301058},  
+  				map: map ,
+				  icon: white
+			});
+			attachSecretMessage(astana , "Nur-Sultan, Mega Silk Way, 4 times.")
+			attachSecretMessage(almaty , "Almaty, Esentai Mall,5 times.")
+			attachSecretMessage(pavlodar , "Pavlodar, Batyr Mall, 11.09.2020.")
+			attachSecretMessage(ekibastuz , "Ekibastuz, Bolashak +, oriented:05.01.2021.")
+			attachSecretMessage(atyrau , "Atyrau, Atyrau Mall,3 times.")
+			attachSecretMessage(shymkent , "Shymkent, Shymkent plaza,23.07.2020.")
+			}
+
+			function attachSecretMessage(marker, secretMessage) {
+  				const infowindow = new google.maps.InfoWindow({
+    				content: secretMessage,
+  				});
+  			marker.addListener("click", () => {
+    			infowindow.open(marker.get("map"), marker);
+  				});
+			}
+		</script>
+		<div id="section2">
+			<a href="#header">
+				<img src="img/arrowup.png" alt="">
+			</a>
+		</div>
+		<script src="community.js"></script>
+
+		
+	</div>
+</body>
+</html>
+
+

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teams</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="teams.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="load()">
+	<header class="container-fluid" id="header">
+		<div class="nav">
+			<label for="toggle">&#9776</label>
+		</div>
+		<input type="checkbox" name="" id="toggle">
+		<div  class="container-fluid" id="nav">
+			 <a href="index.html" id="alogo"><img src="https://www.guilded.gg/asset/GameIcons/GrandCross-lg.png" id="logo" alt="7ds"></a>
+			<ul class="menu">
+				<li >
+					<a class="about_game" href="aboutgame.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">About Game</a>
+				</li>
+				<li >
+					<a class="story" href="story.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Story</a>
+				</li>
+				<li >
+					<a class="characters" href="characters.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Characters</a>
+				</li>
+				<li >
+					<a class="teams" href="teams.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Teams</a>
+				</li>
+				<li >
+					<a class="community" href="community.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Community</a>
+				</li>
+				<li>
+					<a class="play" href="https://bstk.me/usCfCbCYU" target="_blank" onmouseover ="big(this)" onmouseout="small(this)" rel="noopener noreferrer">Play on PC</a>
+				</li>
+				<div class="pic">
+					<div class="user_profile">
+						<img id="profile_img" src="https://cdn131.picsart.com/315664615200211.png?type=webp&to=min&r=640" alt="">
+						<p id="user_name">Escanor</p>
+					</div>
+					<div class="bt">
+						<button onclick="popup()" id="btn_white" class="btn btn-outline-light btn-lg">JOIN</button>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</header> 
+
+	<div class="container-fluid" id="general">
+		<div id="main">
+			
+			<div id="sect1">
+				<a href="#pvp">
+					<img src="https://www.realmarketingclub.net/uploads/2/2/1/5/22155914/d.png" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="popup"> 
+			<div class="popup-content">
+				<img onclick="close_popup()" class="closed" width="7%" src="https://cdn.onlinewebfonts.com/svg/img_469207.png" alt="close">
+				<img width="40%" src="https://tiermaker.com/images/templates/2812261583409455.png" alt="SDS Icon">
+				<input id="username" type="text" name="username" placeholder="Username">
+				<input type="password" id="pass" name="pass" placeholder="Password">
+				<button onclick="login(username.value)" class="btn btn-outline-dark">Log In</button>
+			</div>
+		</div>
+
+		<div class="container">
+			<h2 id="pvp" style="color: #faab00; text-align: center; margin-top: 40px;">PVP</h2>
+			<p style="font-size: 20px; color: aliceblue; margin-right: 15%;margin-left: 15%;">PvP is unlocked during Chapter 4 of the story. The battles happen in real-time against other players. If the game is not able to find you a real player to go up against, you will fight an AI instead.</p>            
+			<table class="table table-dark table-hover" id="table">
+			  <thead>
+				<tr>
+				  <th id="name">Name</th>
+				  <th id="tier">Tier</th>
+				  <th id="units">Units</th>
+				  <th id="sub">Sub Unit</th>
+				</tr>
+			  </thead>
+			  <tbody id="tbody">
+				<tr>
+				<td>LV Goddess</td>
+				<td id="tier1">SS</td>
+				<td id="unit1">
+					<div>
+						<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_116.png" width="70px" alt="Meliodas">
+						<h6>Meliodas</h6>
+					</div>
+					<div>
+						<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_134.png" width="70px" alt="Gowther">
+						<h6>Gowther</h6>
+					</div>
+					<div>
+						<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_137.png" width="70px" alt="Elizabeth">
+						<h6>Elizabeth</h6>
+					</div>
+				</td>
+				<td>
+					<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_49.png" width="70px" alt="Merlin">
+					<h6>Merlin</h6>
+				</td>
+				</tr>
+				<tr>
+					<td>Pierce Team</td>
+					<td id="tier1">SS</td>
+					<td id="unit1">
+						<div>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_133.png" width="70px" alt="Rugal">
+							<h6>Rugal</h6>
+						</div>
+						<div>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_85.png" width="70px" alt="Gowther">
+							<h6>Lilia</h6>
+						</div>
+						<div>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_87.png" width="70px" alt="Elizabeth">
+							<h6>Meliodas</h6>
+						</div>
+					</td>
+					<td>
+						<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_105.png" width="70px" alt="Merlin">
+						<h6>King</h6>
+					</td>
+					</tr>
+					<tr id="monored">
+						<td>Mono Red</td>
+						<td id="tier2">S</td>
+						<td id="unit1">
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_74.png" width="70px" alt="Meliodas">
+								<h6>Arthur</h6>
+							</div>
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_34.png" width="70px" alt="Gowther">
+								<h6>Gowther</h6>
+							</div>
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_100.png" width="70px" alt="Elizabeth">
+								<h6>Escanor</h6>
+							</div>
+						</td>
+						<td>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_105.png" width="70px" alt="Merlin">
+							<h6>King</h6>
+						</td>
+					</tr>
+			  </tbody>
+			</table>
+		  </div>
+
+		  <div class="container">
+			<h2 style="	color: #faab00; text-align: center;">PVE</h2>
+			<p style="font-size: 20px;color: aliceblue;margin-right: 15%; margin-left: 15%;"></p>            
+			<table class="table table-dark table-hover" id="table">
+			  <thead>
+				<tr>
+				  <th id="name">Name</th>
+				  <th id="tier">Tier</th>
+				  <th id="units">Units</th>
+				  <th id="sub">Sub Unit</th>
+				</tr>
+			  </thead>
+			  <tbody id="tbody">
+				<tr>
+					<td>Farming Pierce</td>
+					<td id="tier1">SS</td>
+					<td id="unit1">
+						<div>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_133.png" width="70px" alt="Rugal">
+							<h6>Rugal</h6>
+						</div>
+						<div>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_85.png" width="70px" alt="Gowther">
+							<h6>Lilia</h6>
+						</div>
+						<div>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_87.png" width="70px" alt="Elizabeth">
+							<h6>Meliodas</h6>
+						</div>
+					</td>
+					<td>
+						<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_105.png" width="70px" alt="Merlin">
+						<h6>King</h6>
+					</td>
+					</tr>
+					<tr>
+						<td>Guild Boss Akumu</td>
+						<td id="tier1">SS</td>
+						<td id="unit1">
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_116.png" width="70px" alt="Meliodas">
+								<h6>Meliodas</h6>
+							</div>
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_119.png" width="70px" alt="Gowther">
+								<h6>Eastin</h6>
+							</div>
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_137.png" width="70px" alt="Elizabeth">
+								<h6>Elizabeth</h6>
+							</div>
+						</td>
+						<td>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_46.png" width="70px" alt="Merlin">
+							<h6>Marmas</h6>
+						</td>
+					</tr>
+					<tr id="monored">
+						<td>Guild Boss Kelak</td>
+						<td id="tier1">SS</td>
+						<td id="unit1">
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_114.png" width="70px" alt="Meliodas">
+								<h6>Derieri</h6>
+							</div>
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_62.png" width="70px" alt="Gowther">
+								<h6>Merlin</h6>
+							</div>
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_34.png" width="70px" alt="Elizabeth">
+								<h6>Gowther</h6>
+							</div>
+						</td>
+						<td>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_105.png" width="70px" alt="Merlin">
+							<h6>King</h6>
+						</td>
+					</tr>
+					<tr id="monored">
+						<td>Guild Boss Einek</td>
+						<td id="tier1">SS</td>
+						<td id="unit1">
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_79.png" width="70px" alt="Meliodas">
+								<h6>Escanor</h6>
+							</div>
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_61.png" width="70px" alt="Gowther">
+								<h6>Elizabeth</h6>
+							</div>
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_49.png" width="70px" alt="Elizabeth">
+								<h6>Merlin</h6>
+							</div>
+						</td>
+						<td>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_44.png" width="70px" alt="Merlin">
+							<h6>Jillian</h6>
+						</td>
+					</tr>
+			  </tbody>
+			</table>
+		  </div>
+
+		  <div class="container">
+			<h2 style="	color: #faab00; text-align: center;">DEATHMATCH</h2>
+			<p style="font-size: 20px; color: aliceblue; margin-right:20%;margin-left: 20%;">Deathmatch/Raids are battles against a powerful demon that you can participate in by yourself or with an ally in real-time.You can invite a friend or be matched up with a random player. Each player will have 3 units plus a substitute. During your turn, both will players act at the same time. The order of actions is determined by the speed at which they are selected.</p>            
+			<table class="table table-dark table-hover" id="table">
+			  <thead>
+				<tr>
+				  <th id="name">Name</th>
+				  <th id="tier">Tier</th>
+				  <th id="units">Units</th>
+				  <th id="sub">Sub Unit</th>
+				</tr>
+			  </thead>
+			  <tbody id="tbody">
+				<tr>
+				<td>Red Demon</td>
+				<td id="tier1">SS</td>
+				<td id="unit1">
+					<div>
+						<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_11.png" width="70px" alt="Meliodas">
+						<h6>Ban</h6>
+					</div>
+					<div>
+						<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_107.png" width="70px" alt="Gowther">
+						<h6>Eren</h6>
+					</div>
+					<div>
+						<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_16.png" width="70px" alt="Elizabeth">
+						<h6>Slater</h6>
+					</div>
+				</td>
+				<td>
+					<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_43.png" width="70px" alt="Merlin">
+					<h6>Jericho</h6>
+				</td>
+				</tr>
+				<tr>
+					<td>Gray Demon</td>
+					<td id="tier1">SS</td>
+					<td id="unit1">
+						<div>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_19.png" width="70px" alt="Rugal">
+							<h6>King</h6>
+						</div>
+						<div>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_79.png" width="70px" alt="Gowther">
+							<h6>Escanor</h6>
+						</div>
+						<div>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_61.png" width="70px" alt="Elizabeth">
+							<h6>Elizabeth</h6>
+						</div>
+					</td>
+					<td>
+						<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_22.png" width="70px" alt="Merlin">
+						<h6>Cain</h6>
+					</td>
+					</tr>
+					<tr id="monored">
+						<td>Crimson Demon</td>
+						<td id="tier1">SS</td>
+						<td id="unit1">
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_114.png" width="70px" alt="Meliodas">
+								<h6>Derieri</h6>
+							</div>
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_34.png" width="70px" alt="Gowther">
+								<h6>Gowther</h6>
+							</div>
+							<div>
+								<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_100.png" width="70px" alt="Elizabeth">
+								<h6>Escanor</h6>
+							</div>
+						</td>
+						<td>
+							<img class="character-icon" src="https://rerollcdn.com/SDSGC/portraits/portrait_22.png" width="70px" alt="Merlin">
+							<h6>Cain</h6>
+						</td>
+					</tr>
+			  </tbody>
+			</table>
+		  </div>
+
+
+		<div id="section2">
+			<a href="#header">
+				<img src="img/arrowup.png" alt="">
+			</a>
+		</div>
+		<script src="teams.js"></script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+body {
+	color: #525252;
+	font-weight: 300;
+	font-size:20px;
+	-webkit-overflow-scrolling: touch;
+	justify-content: center;
+	background-color: #525252;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#header {
+	display: flex;
+	justify-content: space-around;
+	background-color: #353535;
+	margin-top:-20px;
+	font-size: 25px;
+	color: #DFDFDF;
+	padding-left: 60px;
+	font-weight: normal;
+}
+#main {
+	position: relative;
+	overflow: hidden;
+	margin-top: auto;
+}
+#fullScreenDiv{
+    min-height: 100%; 
+    height: 100vh;
+    width: 100vw;
+	padding:0;
+    margin: 0;
+    background-color: gray;
+    position: relative;
+}
+#video {
+	position: absolute;
+    top: 0;
+    left: 0;
+	width: 100vw; 
+	height: auto;
+    margin: auto;
+    display: block;
+}
+@media (min-aspect-ratio: 16/9) {
+	#video{
+	  width: 100vw; 
+	  height:auto;
+	}
+}
+  
+@media (max-aspect-ratio: 16/9) {
+	#video {
+	  height: 100vh; 
+	  width:auto;
+	  margin-left: 50vw;
+	  transform: translate(-50%);
+	}
+}
+#videoMessage{
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.videoClick{
+	margin-top: 50px;
+	text-align: center;
+}
+.videoClick a{
+	padding:0.2em 0.5em;
+    border-radius:0.5em;
+	color:white;
+	background-color:rgba(241, 241, 241, 0.45);
+    font-size: 2em;
+	cursor:pointer;
+	cursor:hand;
+}
+.styling { 
+	margin:0.2em;
+	text-align:center;
+}
+.styling h1{
+	color:#ffffff;
+	font-size: 3em; 
+	text-shadow: 2px 2px 2px #000000;
+}
+.styling h2{
+	color:#ffffff;
+	font-size: 1.5em;
+}
+.styling h3{
+	color:#ffffff;
+	font-size: 1.2em;
+}
+.vidmes1{
+	opacity: 0;
+}
+.vidmes2{
+	opacity: 0;
+}
+.videoClick a{
+	padding:0.2em 0.5em;
+	font-size: 3em;
+	color: #ECA009;
+	text-align: center;
+}
+#download {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+
+.text {
+	color: #DFDFDF;
+	text-align: center;
+	margin-right: 50px;
+
+}
+#text1 {
+	font-size: 50px;
+	color: #ECA009;
+	font-weight: normal;
+}
+#text2 {
+	font-size: 40px;
+	font-weight: normal;
+}
+#text3 {
+	font-size: 40px;
+	font-weight: normal;
+}
+
+#logo {
+	width: 50px;
+	margin-right: 50px;
+}
+ul, li {
+ 	list-style-type: none;
+ 	padding: 0px;
+ 	margin-top: 20px;
+}
+#nav {
+	display: flex;
+	align-items: center;
+}
+.menu {
+	display: flex;
+}
+.menu li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 20px;
+}
+.menu li {
+	margin-right: 40px;
+}
+header a {
+	color: #DFDFDF;
+}
+.download {
+	text-decoration: none;
+	margin-left: auto;
+	font-size: 20px;
+}
+.play {
+	text-decoration: none;	
+	color: #DFDFDF;
+}
+a:hover {
+	color: #ECA009;
+	text-decoration: none;
+	outline: 0;
+}
+
+.regButton {
+	background: #525252;
+	margin-top: 20px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 6px 24px;
+	cursor: pointer;
+	font-size: 20px;
+	color: #DFDFDF;
+	position: relative;
+}
+
+.regButton:hover {
+     background: #353535;
+}
+
+#window {
+ 	width: 350px;
+	height: 530px;
+    margin: 40px auto;
+	background: white;
+    background-image: url(https://i.pinimg.com/originals/d4/a5/f5/d4a5f57608610e5995ee9e7632a564b4.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    z-index: 150; 
+    display: none;
+    position: fixed; 
+    left: 0;right: 0;top:0;bottom: 0;
+} 
+
+.form{
+	width: 275px; 
+	margin: -15px auto 20px auto; 
+	text-align: center; 
+}
+
+.input{
+    width: 260px;
+    padding: 5px; 
+    margin-bottom: 10px; 
+} 
+
+.close{
+	margin: 10px 0 0 320px;
+	cursor: pointer;
+	padding: 2px; 
+	background: #fff;
+}
+
+.close:hover{
+    background: #ccc;
+} 
+
+#show{
+	opacity: 0.8; 
+	padding: 15px;
+    background-color: rgba(1,1,1,0.75);
+    position: fixed; 
+    display: none; 
+    z-index:100; 
+    overflow: auto; 
+} 
+
+.nav {
+	float: left;
+}
+label{
+	margin: 8px 0 0 20px;
+	font-size: 30px;
+	display: none;
+}
+#toggle {
+	float: left;
+	display: none;
+}
+
+@media (max-width: 600px) {
+	body{
+		background-color: #525252;
+		margin: 0 auto;
+		padding: 0;
+
+	}
+
+	label {
+		display: block;
+		cursor: pointer;
+	}
+
+	.menu {
+		display: block;
+		padding-top: 40px;
+	}
+	.menu li {
+		border-bottom: 1px solid gold;
+	}
+	#toggle:checked + #nav {
+		display: none;
+	}
+}
+
+#sect1 img{
+	width: 100px;
+	margin-top: 180px;
+}
+#section2{
+	text-align: center;
+	margin-top: -30px;
+}
+#section2 img{
+	width: 100px;
+}
+
+
+#btn_white{
+    font-size: 25px;
+	color: rgb(199, 199, 199);
+    padding: 0 30px;
+}
+.btn:hover {
+	color: #ccc;
+}
+.btn{
+    margin-top: 20px;
+}
+
+.popup{
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    z-index: 2;
+    opacity: 0;
+}
+
+.popup-content{
+	background-color: #dfdfdf;
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position-y: 135px;
+	background-image: url('https://static.wikia.nocookie.net/fictionalcompanies/images/c/c8/BoarHat.png/revision/latest/scale-to-width-down/340?cb=20150311193057');
+    height: 400px;
+    width: 400px;
+    position: relative;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+input{
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    padding: 8px;
+}
+
+.closed{
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.user_profile{
+    position: absolute;
+	top: 76px;
+    right: 50px;
+    margin: 0;
+    background-color: #525252;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+}
+
+#profile_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline;
+}
+
+#user_name{
+    margin: 0;
+    padding: 10px;
+    display: inline;
+    font-size: 25px;
+}

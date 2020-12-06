@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Seven Deadly Sins:Grand Cross</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="load()">
+	<header class="container-fluid" id="header">
+		<div class="nav">
+			<label for="toggle">&#9776</label>
+		</div>
+		<input type="checkbox" name="" id="toggle">
+		<div  class="container-fluid" id="nav">
+			 <a href="index.html" id="alogo"><img src="https://www.guilded.gg/asset/GameIcons/GrandCross-lg.png" id="logo" alt="7ds"></a>
+			<ul class="menu">
+				<li >
+					<a class="about_game" href="aboutgame.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">About Game</a>
+				</li>
+				<li >
+					<a class="story" href="story.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Story</a>
+				</li>
+				<li >
+					<a class="characters" href="characters.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Characters</a>
+				</li>
+				<li >
+					<a class="teams" href="teams.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Teams</a>
+				</li>
+				<li >
+					<a class="community" href="community.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Community</a>
+				</li>
+				<li>
+					<a class="play" href="https://bstk.me/usCfCbCYU" target="_blank" onmouseover ="big(this)" onmouseout="small(this)" rel="noopener noreferrer">Play on PC</a>
+				</li>
+				<div class="pic">
+					<div class="user_profile">
+						<img id="profile_img" src="https://cdn131.picsart.com/315664615200211.png?type=webp&to=min&r=640" alt="">
+						<p id="user_name">Escanor</p>
+					</div>
+					<div class="bt">
+						<button onclick="popup()" id="btn_white" class="btn btn-outline-light btn-lg">JOIN</button>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</header> 
+
+		<div id="main">
+			<div id="fullScreenDiv">
+				<video id="video" role="presentation" preload="auto" playsinline=""  loop="" muted="" autoplay="" class="blur">
+					<source src="videointro.mp4" type="video/mp4">
+				</video>
+				<div id="videoMessage" class="styling"> 
+					<h1 class="vidmes1"  onload="load()">The Seven Deadly Sins</h1>
+					<h1 class="vidmes2"  onload="load()">now on the mobile platforms!</h1>
+					<div id="sect1">
+						<a href="#start">
+							<img src="https://www.realmarketingclub.net/uploads/2/2/1/5/22155914/d.png" alt="">
+						</a>
+					</div>
+				</div> 
+
+			</div>
+		</div>
+
+		<div class="popup"> 
+			<div class="popup-content">
+				<img onclick="close_popup()" class="closed" width="7%" src="https://cdn.onlinewebfonts.com/svg/img_469207.png" alt="close">
+				<img width="40%" src="https://tiermaker.com/images/templates/2812261583409455.png" alt="SDS Icon">
+				<input id="username" type="text" name="username" placeholder="Username">
+				<input type="password" id="pass" name="pass" placeholder="Password">
+				<button onclick="login(username.value)" class="btn btn-outline-dark">Log In</button>
+			</div>
+		</div>
+
+		<p class="videoClick" id="start">
+			<a  href="aboutgame.html">learn more!</a>
+		</p>
+
+		<div class="text">
+			<h1 id="text1">Start your own adventure!</h1>
+			<p id="text2"></p>
+			<p id="text3">Are you ready to enjoy dynamic combat, breathtaking animations, and a riveting story true to the original?</p>
+		</div>
+
+		<div id="download" > 
+			<a href="https://www.bluestacks.com/apps/role-playing/the-seven-deadly-sins-on-pc.html?utm_campaign=afr2b-80da47610ebea953bd5ba85992563efc-com.netmarble.nanagb-en&utm_source=afr2b&no_bar=true">
+				<img style="height: 120px; text-align: center;" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Download-Icon.png" alt="DOWNLOAD">
+				<p style="color: #ECA009; text-align: center; font-weight: normal; font-size: 40px;">DOWNLOAD NOW!</p>
+			</a>
+		</div>
+	
+		<div id="section2">
+			<a href="#header">
+				<img src="img/arrowup.png" alt="">
+			</a>
+		</div>
+	<script src="script.js"></script>
+
+</body>
+</html>

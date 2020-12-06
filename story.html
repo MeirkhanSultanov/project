@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Story</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="story.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<header class="container-fluid" id="header">
+		<div class="nav">
+			<label for="toggle">&#9776</label>
+		</div>
+		<input type="checkbox" name="" id="toggle">
+		<div  class="container-fluid" id="nav">
+			 <a href="index.html" id="alogo"><img src="https://www.guilded.gg/asset/GameIcons/GrandCross-lg.png" id="logo" alt="7ds"></a>
+			<ul class="menu">
+				<li >
+					<a class="about_game" href="aboutgame.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">About Game</a>
+				</li>
+				<li >
+					<a class="story" href="story.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Story</a>
+				</li>
+				<li >
+					<a class="characters" href="characters.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Characters</a>
+				</li>
+				<li >
+					<a class="teams" href="teams.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Teams</a>
+				</li>
+				<li >
+					<a class="community" href="community.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Community</a>
+				</li>
+				<li>
+					<a class="play" href="https://bstk.me/usCfCbCYU" target="_blank" onmouseover ="big(this)" onmouseout="small(this)" rel="noopener noreferrer">Play on PC</a>
+				</li>
+				<div class="pic">
+					<div class="user_profile">
+						<img id="profile_img" src="https://cdn131.picsart.com/315664615200211.png?type=webp&to=min&r=640" alt="">
+						<p id="user_name">Escanor</p>
+					</div>
+					<div class="bt">
+						<button onclick="popup()" id="btn_white" class="btn btn-outline-light btn-lg">JOIN</button>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</header> 
+
+		<div id="main">
+			<div id="sect1">
+				<a href="#storysds">
+					<img src="https://www.realmarketingclub.net/uploads/2/2/1/5/22155914/d.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="popup"> 
+			<div class="popup-content">
+				<img onclick="close_popup()" class="closed" width="7%" src="https://cdn.onlinewebfonts.com/svg/img_469207.png" alt="close">
+				<img width="40%" src="https://tiermaker.com/images/templates/2812261583409455.png" alt="SDS Icon">
+				<input id="username" type="text" name="username" placeholder="Username">
+				<input type="password" id="pass" name="pass" placeholder="Password">
+				<button onclick="login(username.value)" class="btn btn-outline-dark">Log In</button>
+			</div>
+		</div>
+
+		<div id="storysds">
+			<div id="text">
+				<h3 class="text2">The Seven Deadly Sins: <br>
+					Grand Cross</h3>
+				<p class="text3">In the old days when people <br>
+					still lived side by side with other races, <br>
+					<br>
+					many respected and feared the Holy Knights, <br>
+					possessing tremendous power. <br>
+					<br>
+					They were protectors <br>
+					Kingdom of Liones. <br>
+					<br>
+					Suspecting the Holy Knights of betrayal, <br>
+					Princess Elizabeth goes on a journey <br>
+					to find those who can stop the knights. <br>
+					<br>
+					She seeks traitors to the kingdom <br>
+					and enemies of the Holy Knights, <br>
+					[The Seven Deadly Sins]. <br>
+					<br>
+					Eventually Elizabeth meets young man Meliodas - <br>
+					this is how a great adventure begins, <br>
+					which will turn the fate of the world.</p>
+			</div>
+			<p class="videoClick" id="start">
+				<a  href="https://seven-deadlysins-manga.com">Read Manga</a>
+			</p>
+		</div>
+
+
+		<div id="section2">
+			<a href="#header">
+				<img src="img/arrowup.png" alt="">
+			</a>
+		</div>
+		<script src="story.js"></script>
+
+</body>
+</html>

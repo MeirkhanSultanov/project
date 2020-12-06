@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="aboutgame.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="load()">
+	<header class="container-fluid" id="header">
+		<div class="nav">
+			<label for="toggle">&#9776</label>
+		</div>
+		<input type="checkbox" name="" id="toggle">
+		<div  class="container-fluid" id="nav">
+			 <a href="index.html" id="alogo"><img src="https://www.guilded.gg/asset/GameIcons/GrandCross-lg.png" id="logo" alt="7ds"></a>
+			<ul class="menu">
+				<li >
+					<a class="about_game" href="aboutgame.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">About Game</a>
+				</li>
+				<li >
+					<a class="story" href="story.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Story</a>
+				</li>
+				<li >
+					<a class="characters" href="characters.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Characters</a>
+				</li>
+				<li >
+					<a class="teams" href="teams.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Teams</a>
+				</li>
+				<li >
+					<a class="community" href="community.html" onclick="change(this)" onmouseover ="big(this)" onmouseout="small(this)">Community</a>
+				</li>
+				<li>
+					<a class="play" href="https://bstk.me/usCfCbCYU" target="_blank" onmouseover ="big(this)" onmouseout="small(this)" rel="noopener noreferrer">Play on PC</a>
+				</li>
+				<div class="pic">
+					<div class="user_profile">
+						<img id="profile_img" src="https://cdn131.picsart.com/315664615200211.png?type=webp&to=min&r=640" alt="">
+						<p id="user_name">Escanor</p>
+					</div>
+					<div class="bt">
+						<button onclick="popup()" id="btn_white" class="btn btn-outline-light btn-lg">JOIN</button>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</header> 
+	<div class="container-fluid" id="general">
+		<div class="container-fluid" id="main">
+			<h1 id="text1">Welcome to the best anime RPG game on mobile platofrms</h1>
+			<h3 id="text2">Seven Deadly Sins: Grand Cross is a free-to-play, turn-based mobile game developed by Netmarble based off of the popular anime, Seven Deadly Sins. It first launched in Japan and Korea before making its global launch in 2020. It follows the story of the anime very closely, even using cutscenes from the show itself.</h3>
+			<div id="sect1">
+				<a href="#sections">
+					<img src="https://www.realmarketingclub.net/uploads/2/2/1/5/22155914/d.png" alt="">
+				</a>
+			</div>
+		</div>
+		<div class="popup"> 
+			<div class="popup-content">
+				<img onclick="close_popup()" class="closed" width="7%" src="https://cdn.onlinewebfonts.com/svg/img_469207.png" alt="close">
+				<img width="40%" src="https://tiermaker.com/images/templates/2812261583409455.png" alt="SDS Icon">
+				<input id="username" type="text" name="username" placeholder="Username">
+				<input type="password" id="pass" name="pass" placeholder="Password">
+				<button onclick="login(username.value)" class="btn btn-outline-dark">Log In</button>
+			</div>
+		</div>
+
+
+		<div class="text">
+			<p id="text3"></p>
+		</div>
+
+		<div id="sections">
+			
+			<div id="section1">
+				<div id="sec1">
+					<img id="about1" src="img/about1.png" alt="">
+				</div> 
+				
+			</div>
+
+			<div id="section2">
+				<div id="sec3">
+					<img id="about2" src="img/about2.png" alt="">
+				</div>
+
+			</div>
+
+			<div id="section3">
+				<div>
+					<img id="about3" src="img/about3.png" alt="">
+				
+				</div>
+
+			</div>
+			<div id="section4">
+				<div>
+					<img id="about4" src="img/about4.png" alt="">
+				
+				</div>
+			</div>
+
+			<div id="section5">
+				<div>
+					<img id="about5" src="img/about5.png" alt="">
+				
+				</div>
+
+			</div>
+			<div id="section6">
+				<div>
+					<img id="about6" src="img/about6.png" alt="">
+				
+				</div>
+			</div>
+			<div id="section7">
+				<div>
+					<img id="about7" src="img/about7.png" alt="">
+					
+				</div>
+			</div>
+			<div id="section8">
+				<div>
+					<img id="about8" src="img/about8.png" alt="">
+			
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<h5>advvdmcndzvbdjkvsnjvksndljnvldjnvdlvnzlvznljvnzkjvnVkbsvhbsflvszbdifdbgvfdcfghnjmnhgbvfdsxdcfvbnjmk,jmnhgbvfdcfvbghnjmknh</h5>
+		</div>
+
+		<div id="sect2">
+			<a href="#header">
+				<img src="img/arrowup.png" alt="">
+			</a>
+		</div>
+		<script src="aboutgame.js"></script>
+	</div>
+</body>
+</html>
